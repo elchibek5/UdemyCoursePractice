@@ -7,6 +7,7 @@ public class Car {
     private int doors = 4;
     private boolean convertible = true;
 
+
     public String getMake() {
         return make;
     }
