@@ -6,7 +6,7 @@ public class Main {
         Car car = new Car();
 //        car.describeCar();
 
-        car.setMake("ss");
+        car.setMake("Honda");
         car.setModel("Banana");
         car.setColor("Black");
         car.setDoors(2);
@@ -18,6 +18,15 @@ public class Main {
 //        System.out.println("door " + car.getDoors());
 
         car.describeCar();
+
+        Car targa = new Car();
+        targa.setMake("Honda");
+        targa.setModel("Banana");
+        targa.setColor("Black");
+        targa.setDoors(2);
+        targa.setConvertible(false);
+
+        targa.describeCar();
 
 
     }
