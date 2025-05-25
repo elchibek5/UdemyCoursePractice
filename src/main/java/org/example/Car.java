@@ -12,6 +12,22 @@ public class Car {
         return make;
     }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
+
+    public void setConvertible(boolean convertible) {
+        this.convertible = convertible;
+    }
+
     public String getModel() {
         return model;
     }
@@ -29,7 +45,14 @@ public class Car {
     }
 
     public void setMake(String make) {
-        this.make = make;
+        if (make == null) make = "Unknown";
+        String lowercaseMake = make.toLowerCase();
+        switch (lowercaseMake) {
+            case "mercedes", "porche", "tesla", "bmw" -> this.make = make;
+            default -> {
+                this.make = "Unsupported ";
+            }
+        }
     }
 
     public void describeCar() {
