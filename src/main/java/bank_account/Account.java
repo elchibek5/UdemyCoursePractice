@@ -8,6 +8,19 @@ public class Account {
     private String customerEmail;
     private String customerPhone;
 
+    public Account() {
+        System.out.println("Empty constructor called");
+    }
+
+    public Account(String number, double balance, String customerName, String email, String phone) {
+        System.out.println("Account constructor with parameteres called");
+        this.number = number;
+        this.balance = balance;
+        this.customerName = customerName;
+        customerEmail = email;
+        customerPhone = phone;
+    }
+
     public void depositFunds(double depositAmount) {
         balance += depositAmount;
         System.out.println("Depositing " + depositAmount + " to the balance " + ". New balance is $" + this.balance);
