@@ -13,7 +13,15 @@ public class Student {
         this.classList = classList;
     }
 
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", classList='" + classList + '\'' +
+                '}';
+    }
 
     public String getId() {
         return id;
