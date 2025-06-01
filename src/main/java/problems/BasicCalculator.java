@@ -10,7 +10,9 @@ public class BasicCalculator {
             return firstNumber;
         }
 
-
+        public double getSecondNumber() {
+            return secondNumber;
+        }
 
         public void setFirstNumber(double number) {
             this.firstNumber = number;
