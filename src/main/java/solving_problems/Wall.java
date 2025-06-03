@@ -16,6 +16,8 @@ public class Wall {
         return width;
     }
 
+    //
+
     public double getHeight() {
         return height;
     }
