@@ -11,7 +11,7 @@ public class BasicCalculator {
         }
 
         public double getSecondNumber() {
-            return secondNumber;
+            return secondNumber;///
         }
 
         public void setFirstNumber(double number) {
