@@ -36,7 +36,14 @@ public class Dog extends Animal{
     @Override
     public void move(String speed) {
         super.move(speed);
-        System.out.println("Dog walk, run and wag their tail");
+//        System.out.println("Dog walk, run and wag their tail");
+        if (speed == "slow") {
+            walk();
+            wagTail();
+        } else {
+            run();
+            bark();
+        }
     }
 
     private void bark() {
