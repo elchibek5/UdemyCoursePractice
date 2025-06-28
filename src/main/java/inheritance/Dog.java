@@ -38,4 +38,20 @@ public class Dog extends Animal{
         super.move(speed);
         System.out.println("Dog walk, run and wag their tail");
     }
+
+    private void bark() {
+        System.out.println("Woof!...");
+    }
+
+    private void run() {
+        System.out.println("Dog Running...");
+    }
+
+    private void walk() {
+        System.out.println("Dog Walking...");
+    }
+
+    private void wagTail() {
+        System.out.println("Wagging Tail...");
+    }
 }
