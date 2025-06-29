@@ -17,8 +17,17 @@ class Student {
         this.age = age;
     }
 
+//    @Override
+//    public String toString() {
+//        return super.toString();
+//    }
+
+
     @Override
     public String toString() {
-        return super.toString();
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
