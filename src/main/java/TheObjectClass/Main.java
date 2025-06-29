@@ -4,7 +4,7 @@ public class Main extends Object {
     public static void main(String[] args) {
 
         Student max = new Student("Max", 21);
-        System.out.println(max.toString());
+        System.out.println(max);
     }
 }
 
@@ -25,9 +25,10 @@ class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+        return name + " is " + age;
+//        return "Student{" +
+//                "name='" + name + '\'' +
+//                ", age=" + age +
+//                '}';
     }
 }
