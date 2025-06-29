@@ -19,6 +19,7 @@ public class Main{
         Fish goldie = new Fish("Goldfish", 0.25, 2, 3);
         doAnimalStuff(goldie, "fast");
 
+
     }
 
     public static void doAnimalStuff(Animal animal, String speed) {
