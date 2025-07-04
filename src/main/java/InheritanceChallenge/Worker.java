@@ -22,4 +22,13 @@ public class Worker {
         return (currentYear - birthYear);
 
     }
+
+    public double collectPay() {
+        return 0.0;
+    }
+
+    public void terminate(String endDate) {
+        this.endDate = endDate;
+    }
+
 }
