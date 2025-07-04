@@ -1,0 +1,25 @@
+package InheritanceChallenge;
+
+public class Worker {
+
+    private String name;
+    private String birthDate;
+    protected String endDate;
+
+    public Worker() {
+
+    }
+
+    public Worker(String birthDate, String name) {
+        this.birthDate = birthDate;
+        this.name = name;
+    }
+
+    public int getAge() {
+        int currentYear = 2025;
+        int birthYear = Integer.parseInt(birthDate.substring(6));
+
+        return (currentYear - birthYear);
+
+    }
+}
