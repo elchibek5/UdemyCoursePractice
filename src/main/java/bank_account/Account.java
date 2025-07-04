@@ -28,7 +28,7 @@ public class Account {
 //        this.customerEmail = customerEmail;
 //        this.customerPhone = customerPhone;
     }
-
+//       Depositing money 
     public void depositFunds(double depositAmount) {
         balance += depositAmount;
         System.out.println("Depositing " + depositAmount + " to the balance " + ". New balance is $" + this.balance);
