@@ -17,6 +17,8 @@ public class Main {
         int age  =25;
         System.out.printf("Your age is %d%n", age);
 
+
+
         int yearOfBirth = 2025 - age;
         System.out.printf("Age = %d, Birth year = %d%n", age, yearOfBirth);
 
