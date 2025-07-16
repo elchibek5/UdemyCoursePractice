@@ -23,7 +23,7 @@ public class Main{
     }
 
     public static void doAnimalStuff(Animal animal, String speed) {
-
+        // Using all animal classes 
         animal.makeNoise();
         animal.move(speed);
         System.out.println(animal);
