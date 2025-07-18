@@ -2,6 +2,7 @@ package OOPBook;
 
 public class OOP {
     public class Entry {
+
         private String name;
         private String number;
 
