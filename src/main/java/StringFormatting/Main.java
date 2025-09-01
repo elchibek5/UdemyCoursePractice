@@ -1,36 +1,42 @@
 package StringFormatting;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        String bulletIt =  "Print a Bulleted List:" +
-                "\t\u2022 First Point\n" +
-                "\t\t\u2022 Sub Point";
+        List<String> bulletPoints = new ArrayList<>();
+        bulletPoints.add(“First Point”);
+        bulletPoints.add(“Sub Point”);
+
+        String bulletIt = “Print a Bulleted List:” +
+                “\t\u2022 “ + bulletPoints.get(0) + “\n” +
+                “\t\t\u2022 “ + bulletPoints.get(1);
         System.out.println(bulletIt);
 
-        String textBlock = """
+        String textBlock = “””
                 Print a Bulleted List:
                 \u2022 First Point
-                    \u2022 Sub Point""";
+                    \u2022 Sub Point”””;
 
         System.out.println(textBlock);
 
-        int age  =25;
-        System.out.printf("Your age is %d%n", age);
-
-
+        int age = 25;
+        System.out.printf(“Your age is %d%n”, age);
 
         int yearOfBirth = 2025 - age;
-        System.out.printf("Age = %d, Birth year = %d%n", age, yearOfBirth);
+        System.out.printf(“Age = %d, Birth year = %d%n”, age, yearOfBirth);
 
-        System.out.printf("Your age is %.2f%n", (float) age);
+        System.out.printf(“Your age is %.2f%n”, (float) age);
 
         for (int i = 1; i <= 100000; i *= 10) {
-            System.out.printf("Printing %6d %n ", i);
+            System.out.printf(“Printing %6d %n “, i);
         }
-        String formattedString = String.format("Your age is %d", age);
+
+        String formattedString = String.format(“Your age is %d”, age);
         System.out.println(formattedString);
 
-        formattedString = "Your age is %d". formatted(age);
+        formattedString = “Your age is %d”.formatted(age);
         System.out.println(formattedString);
     }
 }
