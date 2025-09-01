@@ -8,7 +8,7 @@ public class Main {
 
         car.setMake("Honda");
         car.setModel("Banana");
-        car.setColor("Black");
+//        car.setColor("Black");
         car.setDoors(2);
         car.setConvertible(true);
 
@@ -22,7 +22,7 @@ public class Main {
         Car targa = new Car();
         targa.setMake("Honda");
         targa.setModel("Banana");
-        targa.setColor("Black");
+//        targa.setColor("Black");
         targa.setDoors(2);
         targa.setConvertible(false);
 
