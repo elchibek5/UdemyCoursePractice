@@ -25,5 +25,8 @@ public class Practice {
         double findArea() {
             return radius * radius * Math.PI;
         }
+        Circle defalultCircle = new Circle();
+        Circle myCircle = new Circle(5.0);
+        Circle coolCircle = new Circle(new Point(883, 1720), 5.0);
     }
 }
